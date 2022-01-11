@@ -10,7 +10,45 @@ a {
   color: inherit;
   text-decoration: none;
 }
+ul{
 
-* {
-  box-sizing: border-box;
+  margin-top: 10px;
+
+  width: 600px;
+
+  list-style-type: none;
+
+}
+
+li{
+
+
+
+background: rgba(83, 69, 53, 0.356);
+
+margin-bottom: 10px ;
+
+padding :15px 6px 15px 6px;
+
+border-radius: 3px;
+
+text-align: center;
+
+
+
+}
+*{
+
+  text-decoration: none;
+
+  margin: auto;
+
+  
+
+  background: cornflowerblue;
+
+
+
+
+
 }
