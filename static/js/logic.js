@@ -15,6 +15,7 @@ const nft_contract_address = "0x20B342C66a882b302407c3B59909764d4e4Cd505" //NFT 
 //frontend logic
 
 async function login(){
+  
   await window.web3.currentProvider.enable();
   init();
   Moralis.initialize("7fFnU2oaOFBieq0l8I5iMMT1r4njGaBjC0yshCIy"); // Application id from moralis.io
@@ -25,12 +26,20 @@ Moralis.Web3.authenticate().then(function () {
   document.getElementById("upload").removeAttribute("disabled");
   
 })
+console.log(web3.currentProvider.chainId)
 }
 
 
 
 async function upload(){
-  
+  try {
+    await web3.currentProvider.request({
+      method: "wallet_switchEthereumChain",
+      params: [{ chainId: "0x4" }]
+    });
+  } catch (error) {
+    alert(error.message);
+  }
   
   var Contract = require('web3-eth-contract');
   nft_contract_address='0x7C80D86dDb545b87Cf7F615595232110551Eea7C';
