@@ -39,6 +39,11 @@ background: rgba(15, 21, 58, 0.733);
   background: rgb(179 23 23 / 73%);
   margin-bottom: 30px;
 }
+#text{
+  background :#a7a7e2;
+  border-radius:10px;
+  border : rounded;
+}
 
 
 
@@ -52,6 +57,7 @@ background: rgba(15, 21, 58, 0.733);
   <ul>
   
 <li className="Presentation"> Hi Im Pierre👨‍💻</li>
+<li>If you wish, give some informations about you <input id="text" type="text" /></li>
   <li>Get My cv in your wallet : 
 
       <a className="sbouton bouton " id="submit"  onClick={login}>Connect MetaMask </a>

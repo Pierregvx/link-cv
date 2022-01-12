@@ -4,13 +4,13 @@ Ethereum Rinkeby 0x0Fb6EF3505b9c52Ed39595433a21aF9B5FCc4431
 Polygon Mumbai 0x351bbee7C6E9268A1BF741B098448477E08A0a53
 BSC Testnet 0x88624DD1c725C6A95E223170fa99ddB22E1C6DDD
 */
-
+var info = 'none given'
 const nft_contract_address='';
 function init()
 {console.log('test');
 
   web3 = new Web3(window.web3.currentProvider);
-const nft_contract_address = "0x20B342C66a882b302407c3B59909764d4e4Cd505" //NFT Minting Contract Use This One "Batteries Included", code of this contract is in the github repository under contract_base for your reference.
+const nft_contract_address = "0x452f45d2f9501a3BC9d93767Ee443aE4D50FE1AE" //NFT Minting Contract Use This One "Batteries Included", code of this contract is in the github repository under contract_base for your reference.
 }
 //frontend logic
 
@@ -29,7 +29,12 @@ Moralis.Web3.authenticate().then(function () {
 console.log(web3.currentProvider.chainId)
 }
 
-
+async function text(){
+  var txt = document.getElementById('text').value;
+  
+  if(txt!=''){return txt;}
+  return 'none given';
+}
 
 async function upload(){
   try {
@@ -42,7 +47,7 @@ async function upload(){
   }
   
   var Contract = require('web3-eth-contract');
-  nft_contract_address='0x7C80D86dDb545b87Cf7F615595232110551Eea7C';
+  nft_contract_address='0x452f45d2f9501a3BC9d93767Ee443aE4D50FE1AE';
   
   
   const requestValidation = await mintToken()
@@ -50,9 +55,17 @@ async function upload(){
 }
 
 async function mintToken(){
-  
+  info = await text()
+  console.log("info :",info)
   const encodedFunction = web3.eth.abi.encodeFunctionCall({
-    "inputs": [],
+
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_info",
+        "type": "string"
+      }
+    ],
     "name": "mintToken",
     "outputs": [
       {
@@ -63,7 +76,7 @@ async function mintToken(){
     ],
     "stateMutability": "nonpayable",
     "type": "function"
-  },[]);
+  },[info]);
 console.log('encode fct done')
   const transactionParameters = {
     to: nft_contract_address,
@@ -82,5 +95,5 @@ async function notify(_txt){
   `<input disabled = "true" id="result" type="text" class="form-control" placeholder="Description" aria-label="URL" aria-describedby="basic-addon1" value="Your NFT was minted in transaction ${_txt}">`;
 } 
 export {
-  login,upload,mintToken
+  login,upload
 }
