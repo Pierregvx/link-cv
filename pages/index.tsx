@@ -50,6 +50,7 @@ background: rgba(15, 21, 58, 0.733);
 
       <a  className="sbouton bouton" id="upload" onClick={upload}>Mint my resume </a>
   </li>
+  <a className="bouton"  href=" https://testnets.opensea.io/account" >    <li>Check your nft on Opensea</li></a>
 
       <a className="bouton"  href="https://www.linkedin.com/in/pierre-gueveneux-68ab78197/" > <li>LinkedIn</li></a>
 
