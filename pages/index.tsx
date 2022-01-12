@@ -40,9 +40,9 @@ background: rgba(15, 21, 58, 0.733);
   margin-bottom: 30px;
 }
 
-`
 
-}</style>
+
+`}</style>
 
  
       </Head>
@@ -51,7 +51,7 @@ background: rgba(15, 21, 58, 0.733);
   
   <ul>
   
-<li className="Presentation"> Hi, I'm Pierre <br /></li>
+<li className="Presentation"> Hi Im Pierre👨‍💻</li>
   <li>Get My cv in your wallet : 
 
       <a className="sbouton bouton " id="submit"  onClick={login}>Connect MetaMask </a>
@@ -63,8 +63,8 @@ background: rgba(15, 21, 58, 0.733);
       <a className="bouton"  href="https://www.linkedin.com/in/pierre-gueveneux-68ab78197/" > <li>LinkedIn</li></a>
 
 
-  <a className="bouton"  href="https://github.com/Pierregvx" >    <li>Github</li></a>
-
+  <a className="bouton"  href="https://github.com/Pierregvx" >    <li>My Github</li></a>
+<a href="https://github.com/Pierregvx/link-cv"><li>Repo of this site</li></a>
 
   </ul>
 
