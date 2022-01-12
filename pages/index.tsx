@@ -41,7 +41,7 @@ background: rgba(15, 21, 58, 0.733);
       </Head>
 
       <div className='list'>
-  <h1>Hi, I'm Pierre</h1>
+  
   <ul>
 
   <li>Get My cv in your wallet : 
