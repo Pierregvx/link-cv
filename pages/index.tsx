@@ -43,6 +43,10 @@ background: rgba(15, 21, 58, 0.733);
       <div className='list'>
   
   <ul>
+  <li>Hi, I'm Pierre
+
+
+</li>
 
   <li>Get My cv in your wallet : 
 
