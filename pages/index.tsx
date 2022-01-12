@@ -41,7 +41,9 @@ margin-left:10px;
   border : 1px blue;
   margin-left : 10px;
 }
-
+#disclaimer{
+  color = yellow;
+}
 
 
 `}</style>
@@ -54,7 +56,7 @@ margin-left:10px;
   <ul>
   
 <li className="Presentation"> Hi Im Pierre👨‍💻</li>
-<li>Give some information about yourself if you wish<input placeholder="ex :compagny,link,name etc" id="text" type="text" /></li>
+<li>Give some information about yourself if you wish otherwise leave blank <input placeholder="ex :compagny,link,name etc" id="text" type="text" /> <br /><span id = 'disclaimer'>⚠️ it will be stored in the blockchain</span>  </li>
   <li>Get My cv in your wallet : 
 
       <a className="sbouton bouton " id="submit"  onClick={login}>Connect MetaMask </a>
