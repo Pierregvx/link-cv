@@ -39,7 +39,7 @@ background: rgba(15, 21, 58, 0.733);
 
  
       </Head>
-
+      <p>Hi</p>
       <div className='list'>
   
   <ul>
