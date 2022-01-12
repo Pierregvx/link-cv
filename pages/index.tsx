@@ -43,11 +43,8 @@ background: rgba(15, 21, 58, 0.733);
       <div className='list'>
   
   <ul>
-  <li>Hi, I'm Pierre
-
-
-</li>
-
+  
+<li> Hi</li>
   <li>Get My cv in your wallet : 
 
       <a className="sbouton bouton " id="submit"  onClick={login}>Connect MetaMask </a>
