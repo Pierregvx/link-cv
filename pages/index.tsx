@@ -33,18 +33,25 @@ background: rgba(15, 21, 58, 0.733);
 
 }
 .list{width:50%;}
+.Presentation{
+  padding: 10px 14px 10px 14px;
 
+  background: rgb(179 23 23 / 73%);
+  margin-bottom: 30px;
+}
 
-`}</style>
+`
+
+}</style>
 
  
       </Head>
-      <p>Hi</p>
+      
       <div className='list'>
   
   <ul>
   
-<li> Hi</li>
+<li className="Presentation"> Hi, I'm Pierre <br /></li>
   <li>Get My cv in your wallet : 
 
       <a className="sbouton bouton " id="submit"  onClick={login}>Connect MetaMask </a>
