@@ -1,7 +1,7 @@
 import { useWeb3React } from "@web3-react/core";
 import Head from "next/head";
-import {login,upload,mintToken,notify} from "../static/js/logic";
-
+import {login,upload} from "../static/js/logic";
+import Script from 'next/script'
 function Home() {
  
 
@@ -62,11 +62,9 @@ background: rgba(15, 21, 58, 0.733);
 </div>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <Script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></Script>
 
-  <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
-
-  <script src="{{ url_for('static', filename='js/logic.js') }}"></script> </div>
+  <Script src="https://unpkg.com/moralis/dist/moralis.js"></Script></div>
 
   );
 }
