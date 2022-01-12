@@ -42,7 +42,8 @@ margin-left:10px;
   margin-left : 10px;
 }
 #disclaimer{
-  color = yellow;
+  background: #5e79ab;
+  color: yellow;
 }
 
 
