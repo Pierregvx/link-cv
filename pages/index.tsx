@@ -33,6 +33,10 @@ background: rgba(15, 21, 58, 0.733);
 
 }
 .list{width:50%;}
+.list h1{
+  text-align:center;
+  color:white;
+}
 
 
 `}</style>
@@ -41,7 +45,8 @@ background: rgba(15, 21, 58, 0.733);
       </Head>
 
       <div className='list'>
-  
+      <h1 >Hi, I'm Pierre</h1>
+      <br></br>
   <ul>
 
   <li>Get My cv in your wallet : 
