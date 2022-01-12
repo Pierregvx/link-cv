@@ -64,8 +64,8 @@ background: rgba(15, 21, 58, 0.733);
 
 
   <a className="bouton"  href="https://github.com/Pierregvx" >    <li>Github</li></a>
-  <a className="bouton"  href="https://github.com/Pierregvx/link-cv" >    <li>This repo </li></a>
-  
+
+
   </ul>
 
 </div>
