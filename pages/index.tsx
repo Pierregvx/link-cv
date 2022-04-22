@@ -60,7 +60,7 @@ margin-left:10px;
   
 <li className="Presentation"> Hi Im Pierre👨‍💻</li>
 <li>Give some information about yourself if you wish. Otherwise leave blank <input placeholder="ex :compagny, link, name, what's on your mind etc" id="text" type="text" /> <br /><span id = 'disclaimer'>⚠️ it will be stored in the blockchain</span>  </li>
-  <li>Get My cv in your wallet : 
+  <li>Get My cv in your wallet : /!\ the moralis servor is asleep, it isn't going to work
 
       <a className="sbouton bouton " id="submit"  onClick={login}>Connect MetaMask </a>
 
